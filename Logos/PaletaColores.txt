@@ -1,0 +1,7 @@
+Colores:
+.Verde Fuerte   #00a06b
+.Verde Claro    #68b069
+.Verde Clarito  #b3d088
+.Beige          #f4f1b4
+.Beige clarito  #ffffd0
+.gris:          #737373

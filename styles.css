@@ -1,0 +1,492 @@
+
+/* ------Barra de Navegacion------- */
+
+#Barra_navegacion{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgb(7, 165, 33);
+    margin: 0;
+}
+
+#Nombre_logo{
+    background-image: linear-gradient(to right, #02e057, rgb(0, 0, 0));
+    -webkit-background-clip: text;  
+    background-clip: text; 
+    color: transparent; 
+    padding-right: 20%;
+    padding-left: 25px;
+    font-size: 200%;
+}
+@media (max-width: 900px) { 
+    #Nombre_logo{
+        padding-right: 0px;
+        font-size: 140%;
+    }
+}
+
+#Nombre_logo .logo-container {
+  display: flex;
+  align-items: center; 
+}
+
+#Nombre_logo .logo-container img {
+  margin-right: 10px; 
+}
+@media (max-width: 900px) { 
+  #Nombre_logo .logo-container img {
+      margin-right: 0px;
+  }
+}
+
+
+
+#Boton_hamburguesa{
+    margin-right: 20px;
+    color: #5cb95e;
+}
+@media (max-width: 900px) { 
+    #Boton_hamburguesa{
+        align-content: center;
+    }
+}
+
+.nav-link{
+    margin-left: 90px;
+    text-align: center;
+}
+@media (max-width: 800px) { 
+    .nav-link{
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+
+.navbar-nav .nav-link{
+    color: #151617;
+    font-size: 22px;
+    transition: none;
+}
+
+.navbar-nav .nav-link:hover{
+    background-image: linear-gradient(to top, #33b635, #737373); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.linea{
+    background-color: #0c345c;
+    height: 2px;
+    position: relative;
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 999; 
+}
+
+.whatsapp-button a img {
+  width: 60px; 
+  height: 60px; 
+  border: none;
+}
+
+.whatsapp-button a img:hover{
+  width: 70px;
+  height: 70px;
+  transition: all 0.3s ease;
+}
+
+
+/* ------Seccion Main------- */
+main{
+    padding-top: 130px;
+}
+@media (max-width: 750px) { 
+    main{
+        padding-top: 70px;
+    }
+}
+
+#contenedor_main{
+    border: 0;
+    text-align: center;
+}
+@media (max-width: 750px) { 
+    #imagen_principal{
+        max-width: 80%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+#titulo{
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom,#68b069, #b3d088, #0c0c0cea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 480%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    cursor: default;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+@-webkit-keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @-webkit-keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #008031;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #ffffd0;
+    }
+  }
+
+  
+  @media (max-width: 750px) { 
+    #titulo{
+        font-size: 150%;
+        padding-bottom: 10px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    @keyframes reveal {
+      70% {
+        letter-spacing: 0px;
+      }
+      100% {
+        background-size: 300% 150%;
+      }
+    }
+ }
+
+#subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 170%; 
+    cursor: default;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: #575555;
+}
+@media (max-width: 750px) { 
+    #subtitulo{
+        font-size: 100%;
+    }
+}
+
+#emoticon{
+  font-size: 100%;
+}
+@media (max-width: 750px) { 
+  #emoticon{
+      font-size: 60%;
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+}
+
+#segundafila_contenedormain{
+  text-align: center;
+  padding-top: 3%;
+  border-bottom: 1px solid #008031;
+  padding-bottom: 4%;
+}
+@media (max-width: 750px) { 
+  #segundafila_contenedormain{
+    border: 0;
+  }
+}
+
+#tit_segundafila{
+  font-family: 'Poppins', sans-serif;
+  color: #44aa46;
+  cursor: default;
+}
+#subtit_segundafila{
+ font-family: 'Roboto', sans-serif; 
+ font-weight: 600;
+ margin-left: 40px;
+ margin-right: 40px;
+ font-size: 120%;
+ cursor: defaults;
+ color: #575555;
+}
+@media (max-width: 750px) { 
+  #subtit_segundafila{
+    margin: 0;
+  }
+}
+
+
+
+/* -----Articulo 1 (Tarjetas de las cuentas)------*/
+
+article{
+  padding-top: 4%;
+}
+article .container{
+  border-bottom: 1px solid #008031;
+  padding-bottom: 2%;
+}
+@media (max-width: 750px) { 
+  article .container{
+    border: 0;
+    padding-bottom: 7%;
+  }
+}
+
+
+#icono_titulo_articulos{
+  width: 3%;
+  padding-bottom: 1%;
+}
+@media (max-width: 750px) { 
+  #icono_titulo_articulos{
+    width: 10%;
+  }
+}
+
+.titulo_articulo{
+  font-family: 'Poppins', sans-serif;
+  font-size: 200%;
+  margin-top: 10%;
+  background-image: linear-gradient(60deg, #44aa46, #575555);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: default;
+}
+@media (max-width: 750px) { 
+  .titulo_articulo{
+    font-size: 132%;
+  }
+}
+
+
+#tarjetas{
+  border: #008031 solid 2px;
+  filter: brightness(88%);
+  text-align: center;
+}
+
+#tarjetas:hover{
+  box-shadow: 0 2px 4px 4px #5050509d;
+  transition: all 0.2s linear;
+  border-color: #02e057;
+  cursor: pointer;
+  filter: brightness(100%);
+  
+}
+@media (max-width: 750px) { 
+  #tarjetas{
+    filter: brightness(100%); 
+    margin: 6%;
+  }
+}
+
+#BotonEnlace{
+  background-color: #006125;
+  font-size: 120%;
+  font-family: 'Poppins', sans-serif;
+  border-color: #575555;
+  border-radius: 10px;
+}
+@media (max-width: 750px) { 
+  #BotonEnlace{
+    margin-top: 7%;
+  }
+}
+#BotonEnlace:hover{
+  background-color: #008031;
+  transition: all 0.2s linear;
+}
+
+#contenedor_texto_cards{
+  border-top: #008031  solid 2px;
+}
+
+.card-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.card-text{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+}
+.epigrafe1{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  padding-top: 3%;
+  color: #575555;
+  font-size: 120%;
+  cursor: default;
+}
+@media (max-width: 750px) { 
+  .epigrafe1{
+    padding-top: 7%;
+  }
+}
+.epigrafe2{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  font-size: 130%;
+  cursor:default;
+  color: #575555;
+}
+div p a:hover{
+  background-image: linear-gradient(to top,#57f4ff, #2a01bb); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+/*------Articulo 2 (Preguntas)------*/
+
+article #articulo2{
+  padding-bottom: 5%;
+  border: 0;
+}
+@media (max-width: 750px) { 
+  article #articulo2{
+    padding-bottom: 9%;
+  }
+}
+
+#acordion_dentro{
+  color:#007a2f;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  font-size: 115%;
+  background-color: #d4e4cf;
+  cursor: default;
+  font-size: 120%;
+  border: #006125 1px solid ;
+}
+@media (max-width: 750px) { 
+  #acordion_dentro{
+    font-size: 100%;
+  }
+}
+
+.accordion-button:hover {
+  background-color:#72cf73 !important;   /* Cambia el color de fondo al pasar el mouse */
+  color: #151617 !important; /* Cambia el color del texto al pasar el mouse */
+  transition: all 0.3s ease!important;
+}
+
+#titulo_acordion{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-bottom: #006125 1px solid;
+  background-color: #e9e7e7;
+  color: #151617;
+  text-align: center;
+  font-size: 60%;
+}
+
+#titulo_acordion:hover{
+  background-color: #9fb8a3;
+  transition: all 0.2s ease-in;
+}
+
+.accordion.accordion-flush .accordion-item.active {
+  background-color: #f8f9fa; /* Color de fondo cuando el acordeón está activo */
+}
+
+/*------Footer------*/
+
+footer{
+  text-align: center;
+  background-color: #151617;
+  border-top:  #006125 4px solid;
+  padding-top: 1%;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 1%;
+}
+@media (max-width: 750px) { 
+  footer{
+    padding-top: 5%;
+    padding-bottom: 7%;
+  }
+}
+
+#titulo_footer{
+  background-image: linear-gradient(to top, #006125 , #dadada9d); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  cursor: default;
+  font-size: 160%;
+}
+
+footer a{
+  color: #b1afaf;
+  text-decoration: none;
+}
+footer a:hover{
+  background-image: linear-gradient(to top,#006125 , #dadada9d); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  transition: all 0.2s linear;
+}
+
+#contenedor_iconos{
+  padding-top: 1%;
+  cursor: default;
+}
+@media (max-width: 750px) { 
+  #contenedor_iconos{
+    padding-top: 3%;
+  }
+}
+
+#contenedor_iconos a img:hover{
+  filter: brightness(0.3) sepia(5) saturate(3) hue-rotate(100deg);
+  transition: filter 0.2s ease-in-out;
+  transition: all 0.2s linear;
+}
+
+#copyright{
+  padding-top: 3%;
+  color: #b1afaf;
+  cursor: default;
+}
+@media (max-width: 750px) { 
+  #copyright{
+    padding-top: 5%;
+  }
+}
+
+footer .modal-title{
+  color: #006125;
+  font-weight: 600;
+}
+
+.modal-body a {
+  color: #006125;
+}
